@@ -1,6 +1,6 @@
 # Ash-Make
 
-Ash-Make is a [Ash](https://github.com/BrandonRomano/ash) module that allows users to create files similar to classic Makefiles but are written like traditional script files.  Ash-Make files can also leverage powerful dependency management from the Ash core.
+Ash-Make is an [Ash](https://github.com/BrandonRomano/ash) module that allows users to create files similar to classic Makefiles but are written like traditional script files.  Ash-Make files can also leverage powerful dependency management from the Ash core.
 
 ## Getting started
 
@@ -11,7 +11,7 @@ After you have Ash installed, run either one of these two commands depending on 
 - `ash self:install git@github.com:BrandonRomano/ash-make.git`
 - `ash self:install https://github.com/BrandonRomano/ash-make`
 
-You can optionally add `--global` to the end of these commands to install them globally.
+You can optionally add `--global` to the end of these commands to install them globally.  This is likely a module you'll want globally, so I would recommend the global flag.
 
 After that, you should now be good to use Ash-Make.
 

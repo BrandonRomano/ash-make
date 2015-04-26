@@ -4,7 +4,7 @@
 # This command is executed when calling either
 # 'ash make:exec main' or simply 'ash make'
 ##################################################
-Command__main() {
+Make__command_main() {
     Logger__log "ash_makefile main"
 }
 
@@ -12,7 +12,7 @@ Command__main() {
 # This command is executed when calling
 # 'ash make:exec other'
 ##################################################
-Command__other() {
+Make__command_other() {
     helper_function
 }
 

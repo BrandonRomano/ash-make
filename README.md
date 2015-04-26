@@ -23,7 +23,7 @@ If this is your first time using Ash-Make, run `ash make:init` in your applicati
 
 If you've already used Ash-Make, and don't need a template, you're totally free to just create an `ash_make.sh` file.
 
-## The ash_make.sh File
+### The ash_make.sh File
 
 After running `ash make:init` you'll find a file that looks like this:
 
@@ -58,7 +58,7 @@ helper_function() {
 
 This file contains both commands, and normal helper functions.
 
-## Commands
+### Commands
 
 Commands are prefixed with `Command__` (two underscores).  These are the functions that can be executed directly via Ash-Make.
 
@@ -68,7 +68,7 @@ The same is true for `Command__main`, although `ash make:exec main` is simply al
 
 It's also worth noting that these commands are simple bash functions, and can be called via other commands/helper functions.
 
-## Helper functions
+### Helper functions
 
 Helper functions are simply any function in the `ash_make.sh` file that are not prefixed by `Command__`.
 

@@ -28,11 +28,16 @@ Make__callable_exec() {
         return
     fi
 
-    # Loading in the ash_make file
-    . $Make_make_file_path
+    # Loading in the ash_make temporary file
+    local tmp_make_file="$Make_make_file_path.tmp"
+    sed 's/Command__/Make__command_/g' < $Make_make_file_path > "$tmp_make_file"
+    . "$tmp_make_file"
 
     # Executing the command
     Make__command_$1 "${@:2}"
+
+    # Removing temporary file
+    rm "$tmp_make_file"
 }
 
 ##################################################

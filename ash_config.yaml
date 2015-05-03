@@ -1,4 +1,4 @@
-name: Make
+name: make
 callable_prefix: Make
 version: 1.0.0
 author: Brandon Romano

@@ -1,4 +1,5 @@
 name: Make
-callable_prefix: Make
 package: github.com/ash-shell/make
+is_callable: true
+callable_prefix: Make
 default_alias: make

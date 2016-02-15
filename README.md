@@ -4,14 +4,12 @@ Ash-Make is an [Ash](https://github.com/ash-shell/ash) module that allows users 
 
 ## Getting started
 
-You're going to have to install [Ash](https://github.com/ash-shell/ash) to use this module, as it is tightly coupled to the Ash core.
+You're going to have to install [Ash](https://github.com/ash-shell/ash) to use this module.
 
 After you have Ash installed, run either one of these two commands depending on your git clone preference:
 
-- `ash self:install https://github.com/ash-shell/make.git --global`
-- `ash self:install git@github.com:ash-shell/make.git --global`
-
-After that, you should now be good to use Ash-Make.
+- `ash apm:install https://github.com/ash-shell/ash-make.git --global`
+- `ash apm:install git@github.com:ash-shell/ash-make.git --global`
 
 ## How to use Ash-Make
 
@@ -74,4 +72,4 @@ Just like commands, these are also simple bash functions, and can be called via 
 
 ## License
 
-[MIT](license.txt)
+[MIT](LICENSE.md)

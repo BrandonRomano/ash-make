@@ -1,7 +1,7 @@
 #!/bin/bash
 
 Make_make_file_name="ash_make.sh"
-Make_make_file_path="$Ash__call_directory/$Make_make_file_name"
+Make_make_file_path="$Ash__CALL_DIRECTORY/$Make_make_file_name"
 
 ##################################################
 # This function is just an alias for `ash make:exec main`
@@ -45,7 +45,7 @@ Make__callable_exec() {
 Make__callable_init() {
     # If directory is not already initialized
     if [[ ! -f $Make_make_file_path ]]; then
-        cp "$Ash__active_module_directory/extras/default_ash_make.sh" "$Make_make_file_path"
+        cp "$Ash__ACTIVE_MODULE_DIRECTORY/extras/default_ash_make.sh" "$Make_make_file_path"
         Logger__success "Make file has been created at $Make_make_file_path"
     else
         Logger__error "This directory is already initialized!"
